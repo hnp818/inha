@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title>Pageable</title>
+		
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/basic.css">
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script src="js/prefixfree.jquery.js"></script>
+		<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+		<script defer src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
+		<script defer src="js/progress.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/main.js"></script> 
+	</head>
+	<body>
+		
+		<header>
+			<div class="header wrap">
+				<h1 class="logo"><a href="#">인하공업전문대학교</a></h1>
+				<ul class="gnb">
+					<li><a href="#" class="gnb_a">대학소개</a>
+						<div class="gnb_s">
+							<div class="gnb_s_img gnb_s_img1"></div>
+							<ul class="gnb_s_ul">
+								<li><a href="#">총장실</a></li>
+								<li><a href="#">학교안내</a></li>
+								<li><a href="#">발전기금</a></li>
+								<li><a href="#">정보공개</a></li>
+								<li><a href="#">법인</a></li>
+								<li><a href="#">찾아오시는길</a></li>
+								<li><a href="#">캠퍼스지도</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" class="gnb_a">학과안내</a>
+						<div class="gnb_s">
+							<div class="gnb_s_img gnb_s_img2"></div>
+							<ul class="gnb_s_ul">
+								<li><a href="#">기계공학부</a></li>
+								<li><a href="#">수송기계공학부</a></li>
+								<li><a href="#">정보산업공학부</a></li>
+								<li><a href="#">컴퓨터정보공학부</a></li>
+								<li><a href="#">지구환경공학부</a></li>
+								<li><a href="#">건축학부</a></li>
+								<li><a href="#">신소재공학부</a></li>
+								<li><a href="#">서비스학부</a></li>
+								<li><a href="#">디자인학부</a></li>
+								<li><a href="#">어학교양학부</a></li>
+								<li><a href="#">학사학위 전공심화과정</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" class="gnb_a">기관/시설</a>
+						<div class="gnb_s">
+							<div class="gnb_s_img gnb_s_img3"></div>
+							<ul class="gnb_s_ul">
+								<li><a href="#">직속기관</a></li>
+								<li><a href="#">대학본부</a></li>
+								<li><a href="#">부속기관</a></li>
+								<li><a href="#">산학협력단</a></li>
+								<li><a href="#">주요명소</a></li>
+								<li><a href="#">편의시설</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" class="gnb_a">대학생활</a>
+						<div class="gnb_s">
+							<div class="gnb_s_img gnb_s_img4"></div>
+							<ul class="gnb_s_ul">
+								<li><a href="#">학사일정</a></li>
+								<li><a href="#">수업성적</a></li>
+								<li><a href="#">학적/졸업</a></li>
+								<li><a href="#">등록/증명서</a></li>
+								<li><a href="#">장학/학자금</a></li>
+								<li><a href="#">현장실습</a></li>
+								<li><a href="#">예비군/병무</a></li>
+								<li><a href="#">글로벌인턴쉽</a></li>
+								<li><a href="#">학사규정(학칙)</a></li>
+								<li><a href="#">주간주요일정</a></li>
+								<li><a href="#">학생민원서비스</a></li>
+								<li><a href="#">신입생 길라잡이</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#" class="gnb_a">정보광장</a>
+						<div class="gnb_s">
+							<div class="gnb_s_img gnb_s_img5"></div>
+							<ul class="gnb_s_ul">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">질문답변</a></li>
+								<li><a href="#">입찰</a></li>
+								<li><a href="#">기초학습향상과정신청</a></li>
+								<li><a href="#">재택수업 불편신고</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">시설물개선건의</a></li>
+								<li><a href="#">대학발전건의</a></li>
+								<li><a href="#">총장에게바란다</a></li>
+								<li><a href="#">인권침해상담</a></li>
+								<li><a href="#">자유게시판</a></li>
+								<li><a href="#">삽니다&팝니다</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<ul class="h_menu">
+					<li class="search"><input class="search_input" type="text"><a href="#"><i class="fas fa-search"></i></a></li>
+					<li class="menu_btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="vid_text">
+			<div class="vid_text_in vid_text1 wow animate__fadeInUp">
+				<p>최상의 시설과</p>
+				<p>교수진이</p>
+				<p>여러분의 가능성을</p>
+				<p>현실로 바꾸는</p>
+				<p>마당을 펼쳐드립니다</p>
+			</div>
+			<div class="vid_text_in vid_text2">
+				<h2>교육 목표</h2>
+				<div class="edu">
+					<div class="cir cir1">
+						<p>진실하고 자주적인</p>
+						<h3>지성인 양성</h3>
+					</div>
+					<div class="cir cir2">
+						<p>근면하고 창의적인</p>
+						<h3>직업인 양성</h3>
+					</div>
+					<div class="cir cir3">
+						<p>유능하고 봉사적인</p>
+						<h3>사회인 양성</h3>
+					</div>
+				</div>
+				<div class="edu_txt">
+					<p>인하공업전문대학의 학훈인 진(眞)은 학문을 전수하기에 앞서 진실한
+						인간상을 추구하는 인하공업전문대학의 교육이념입니다.</p>
+					<p>또한 <span style="color:pink">‘진실하고 자주적인 지성인’</span>, <span style="color:rgb(184, 233, 255)">‘근면하고 창의적인 직업인’</span>,
+						<span style="color:rgb(226, 255, 192)">‘유능하고 봉사적인 사회인 양성’</span>이라는 3대 교육목표를 바탕으로
+						대학을 운영하고 있습니다.</p>
+					<p>교육방침으로 투철한 국가관과 인격 도야를 위한 참된 인간 교육과
+						산업 사회에 부응하는 실용적인 산업기술 교육, 산학
+						협동에 의한 생산적인 산업기술교육과 현대화된 시설에 의한
+						선진적인 산업기술 교육을 실시해 나아가는 것입니다.</p>
+				</div>
+			</div>
+			<div class="vid_text_in vid_text_in3">
+				<h2>교육방침</h2>
+				<div class="vid_text3">
+					<p>투철한 국가관과 인격도야를 위한 <b>참된 인간교육</b>을 실시한다.</p>
+					<p>산업사회에 부흥하는 <b>실용적인 산업기술교육</b>을 실시한다.</p>
+					<p>산학협력에 의한 <b>생산적인 기술교육</b>을 실시한다.</p>
+					<p>현대화된 시설에 의한 <b>선진적인 산업기술교육</b>을 실시한다.</p>
+				</div>
+			</div>
+			<div class="vid_text_in vid_text4">
+				<h2>연혁</h2>
+				<div class="his">
+					<ul class="his_list">
+						<li class="active"><button>2010~현재</button></li>
+						<li><button>2000~2009</button></li>
+						<li><button>1990~1999</button></li>
+						<li><button>1970~1989</button></li>
+						<li><button>1950~1969</button></li>
+					</ul>
+					<div class="his_txt 2010">
+						<div class="history">
+							<h2>2010</h2>
+							<div class="list_right">
+								<span></span>
+								<div>
+									<ul>
+										<li>
+											<dl>
+												<dt>04.01</dt>
+												<dd>정보통신처 신설</dd>
+												<dd>학생지원처를 학생처로 명칭 변경</dd>
+												<dd>학술정보원에서 도서관으로 명칭 변경</dd>
+											</dl>
+											<dl>
+												<dt>07.12</dt>
+												<dd>인하모터스를 학교기업으로 신설</dd>
+												<dd>인하ENG를 학교기업으로 신설</dd>
+											</dl>
+											<dl>
+												<dt>10.11</dt>
+												<dd>산학협력단에 인하종합디자인센터, 대학경영지원센터 신설</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<h2>2011</h2>
+							<div class="list_left">
+								<span></span>
+								<div>
+									<ul>
+										<li>
+											<dl>
+												<dt>01.26</dt>
+												<dd>기획처 홍보팀을 기획처 대외협력센터로 명칭 변경</dd>
+											</dl>
+											<dl>
+												<dt>09.26</dt>
+												<dd>학생처에 장애학생지원센터 신설</dd>
+												<dd>평생교육원에 한국어교육센터 신설</dd>
+											</dl>
+											<dl>
+												<dt>10.14</dt>
+												<dd>선박해양시스템과를 조선해양과로 학과명칭 변경</dd>
+												<dd>지형공간정보과를 항공지리정보로 학과명칭 변경</dd>
+												<dd>공예디자인과를 산업디자인로 학과명칭 변경</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<h2>2012</h2>
+							<div class="list_right">
+								<span></span>
+								<div>
+									<ul>
+										<li>
+											<dl>
+												<dt>01.30</dt>
+												<dd>종합실습관 준공</dd>
+											</dl>
+											<dl>
+												<dt>03.01</dt>
+												<dd>교무처에 공학기술교육혁신센터 신설</dd>
+											</dl>
+											<dl>
+												<dt>04.23</dt>
+												<dd>8대 총장에 정동석 박사 취임</dd>
+											</dl>
+											<dl>
+												<dt>09.24</dt>
+												<dd>기획처 대외협력센터에서 대외협력센터(직속기관)로 개편</dd>
+											</dl>
+											<dl>
+												<dt>12.03</dt>
+												<dd>학생생활연구소에서 학생상담센터로 명칭 변경</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<h2>2013</h2>
+							<div class="list_left">
+								<span></span>
+								<div>
+									<ul>
+										<li>
+											<dl>
+												<dt>03.01</dt>
+												<dd>제9대 총장에 진인주 박사 취임</dd>
+											</dl>
+											<dl>
+												<dt>07.25</dt>
+												<dd>「학교법인 정석학원」과 합병하여 「학교법인 정석인하학원」으로 인가</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<h2>2014</h2>
+							<div class="list_right">
+								<span></span>
+								<div>
+									<ul>
+										<li>
+											<dl>
+												<dt>03.01</dt>
+												<dd>취업지원처 신설</dd>
+												<dd>학생처를 입학학생처로 명칭 변경</dd>
+												<dd>정보통신처를 전산정보센터(부속기관)로 명칭 변경(정보통신팀 폐지)</dd>
+												<dd>교무처에 직업기초교육센터 신설</dd>
+												<dd>교무처 입학팀에서 입학학생처 입학팀으로 개편</dd>
+												<dd>교무처 2부교학실 폐지</dd>
+												<dd>교무처 실습지원센터 폐지</dd>
+												<dd>입학학생처에 학생서비스센터 신설</dd>
+												<dd>학생처 취업지원센터에서 취업지원처 취업지원팀으로 개편</dd>
+												<dd>학생상담센터(부속기관)에서 취업지원처 학생상담센터로 개편</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<h2>2018</h2>
+							<div class="list_left">
+								<span></span>
+								<div>
+									<ul>
+										<li>
+											<dl>
+												<dt>08.13</dt>
+												<dd>대외업무팀을 평가홍보팀으로 개편</dd>
+												<dd>NCS교육혁신센터와 직업기초교육센터를 통합해 직업교육지원센터로 개편</dd>
+												<dd>학생팀을 학생지원팀으로 명칭 변경</dd>
+												<dd>창업지원센터와 창업교육센터를 창업지원센터로 통합</dd>
+												<dd>인하종합디자인센터를 융합교육지원센터로 명칭 변경</dd>
+												<dd>전산정보센터를 전산정보원으로 명칭 변경</dd>
+												<dd>학보사와 방송국을 학보방송사로 통합대외협력</dd>
+												<dd>센터를 국제교류원으로 명칭 변경</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			      
+		</div>
+
+<main id="container">
+	<section id="page_1" data-anchor="Page 1">
+		<div class="text">
+			<div class="full">
+
+
+
+				<div id="slide-window">
+  
+					<ol id="slides" start="1">
+					
+					  <li class="slide color-0 alive" style="background-image:url(img/sli1.jpg) ;">
+						<div class="main_txt_box slide_box1 wow animate__slideInDown">
+							<h3>인하공업전문대학</h3>
+							<h2>코로나19 대응 매뉴얼 안내<br>
+							</h2>
+							<h4>Version3-3, 정부대응지침<br>제9-3판 반영본</h4>
+							<hr>
+							<p>우리 대학에서 교내 감염병 유입 예방을 위해 운영하는 코로나19 대응 매뉴얼(Version3-3)을 다음과 같이 안내하오니 전 구성원께서는 전반적인 내용을 숙지하시어 개인의 건강과 안전한 캠퍼스 구축에 협조하여 주시기 바랍니다.</p>
+							<a class="gogo" href="#"><i class="fas fa-arrow-circle-right"></i></a>
+						</div>
+					</li>
+					  
+					  <li class="slide color-1" style="background-image:url(img/sli2.jpg);">
+						<div class="main_txt_box slide_box2 wow animate__slideInDown">
+							<h3>인하공업전문대학</h3>
+							<h2>VR 모의면접<br>간단 매뉴얼 
+							</h2>
+							<h4>ㆍ일시 : 2020.09.23 ~ <br> 서비스 종료시</h4>
+							<hr>
+							<p>ㆍ활용방법 : 3개실별 측벽면 부착을 통하여 VR기기 및 콘텐츠 사용법 안내<br>
+								ㆍ장소 : 3호관 203B(VR 모의면접 체험실 1,2,3) 
+							</p>
+							<a class="gogo" href="#"><i class="fas fa-arrow-circle-right"></i></a>
+						</div>
+					</li>
+					  
+					  <li class="slide color-2" style="background-image:url(img/sli3.jpg);">
+					
+						<div class="main_txt_box slide_box3 wow animate__slideInDown">
+							<h3>인하공업전문대학</h3>
+							<h2> ‘사랑의 김장나눔 봉사’
+							</h2>
+							<h4>인하공업전문대학은 16일(수)에 지역 주민을 위한 사랑의 김장나눔 봉사 활동을 펼쳤다.</h4>
+							<hr>
+							<p> 이번 봉사활동에는 진인주 총장을 비롯한 교직원 30여명이 참여해, 교내 식당에서 코로나19 방역 수칙을 철저히 지킨 가운데 김장 김치를 담갔다.
+							</p>
+							<a class="gogo" href="#"><i class="fas fa-arrow-circle-right"></i></a>
+						</div>
+					</li>
+					  
+					  <li class="slide color-3" style="background-image:url(img/sli4.jpg);">
+					
+						<div class="main_txt_box slide_box4 wow animate__slideInDown">
+							<h3>혁신지원사업</h3>
+							<h2> 온라인 성과 전시관 오픈
+							</h2>
+							<h4>12월7일 10시부터 혁신지원사업에 대한 온라인 성과 전시관을 온라인으로 개설</h4>
+							<hr>
+							<p> 온라인 전시관은 VR캠퍼스 투어를 비롯하여 △교육혁신관 △개방향 직업교육 플랫폼 △취·창업지원관 △산학협력관 △국제교류관 △창의융합관 △지자체협력관 △LINC+관 등 총 8개의 테마관으로 구성됐다.
+							</p>
+							<a class="gogo" href="#"><i class="fas fa-arrow-circle-right"></i></a>
+						</div>
+					</li>
+
+					</ol>
+				 
+					<span class="nav fa fa-chevron-left fa-3x" id="left"></span>
+					<span class="nav fa fa-chevron-right fa-3x" id="right"></span>
+					
+
+				</div>
+				  
+
+
+
+
+
+
+
+				
+				<div class="scroller">
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<section id="page_2"data-anchor="Page 2">
+		<div class="text">
+			<div class="full">
+				<div class="paper wow animate__fadeInLeft">
+					<h2><span class="color1">현장 중심</span><br><span class="color2">창의 인재</span><br><span class="color3">글로벌 선도대학</span></h2>
+					<h3>인하공업전문대학 홈페이지를 방문해 주셔서 감사합니다.</h3>
+					<p>우리대학은 1958년 개교 이래 사회가 요구하는 전문 기술 인력을 양성하여 국가 발전에 기여해오고 있습니다.</p>
+					<p> 반세기가 넘는 오랜 역사와 최고의 품질을 자랑하는 교육으로 한국의 선도적인 전문대학으로 자리매김하면서 현대 산업사회의 핵심 분야 24개 학과를 운영하고 있습니다. 정보화시대를 지나 더욱 다변하는 새 시대의 주역으로 성장하는 전문 기술인에게 요구되는 소양과 덕목, 그리고 글로벌 마인드를 갖춘 인재양성을 위해 인하공업전문대학의 전 구성원은 모든 노력을 경주하고 있습니다.</p>
+					<p><b>우리 인하공업전문대학으로 오십시오.</b><br> 사회가 요구하는 교육과정, 최상의 시설과 교수진이 여러분의 꿈을 현실로 바꾸는 마당을 펼쳐드립니다. 변화 속에서 창조적 다양성을 추구하며 바른 인성을 갖춘 인재로 만들어드리겠습니다.</p>
+					<p>-인하공업전문대학 총장 진인주</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="page_3" data-anchor="Page 3">
+		<div class="text">
+			<div class="vid_wrap full">
+						<video muted autoplay loop>
+							<source src="video/vid1.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+						</video>
+			</div>
+		</div>
+	</section>
+	<section id="page_4" data-anchor="Page 4">
+		<div class="text">
+			<div class="peo full">
+					<div class="peo_p">
+						<div class="peo_p1_wrap">
+							<div class="peo_card">
+								<h3>"나는 행복합니다"</h3>
+								<p>정보통신과<b>졸업생</b></p>
+								<p>프로게이머<span>권상윤</span></p>
+								<a class="gogo2" href="#"><i class="fas fa-arrow-circle-right"></i></a>
+							</div>
+							<div class="peo_p1">
+							</div>
+						</div>
+						<div class="peo_p2_wrap">
+							<div class="peo_card">
+								<h3>"날개를 펴다"</h3>
+								<p><b>관광경영과</b>졸업생</p>
+								<p>예능인<span>장도연</span></p>
+								<a class="gogo2" href="#"><i class="fas fa-arrow-circle-right"></i></a>
+							</div>
+							<div class="peo_p2">
+							</div>
+						</div>
+						<div class="peo_p3_wrap">
+									<div class="peo_card">
+									<h3>"지킬 수 있습니다"</h3>
+									<p><b>정보산업공학부</b>졸업생</p>
+									<p>기업인<span>신종균</span></p>
+									<a class="gogo2" href="#"><i class="fas fa-arrow-circle-right"></i></a>
+								</div>
+							<div class="peo_p3">
+
+							</div>
+						</div>
+					</div>
+
+			</div>
+		</div>
+	</section>
+	<section id="page_5" data-anchor="Page 5">
+		<div class="text">
+			<div class="maps_pic"></div>
+			<div class="full maps">
+				<div class="half">
+					<h2>오시는 길</h2>
+					<h3>주소</h3>
+					<p>인천광역시 미추홀구 인하로 100번지 (☏ 032-870-2114)</p>
+
+					<ul>
+						<li>무료 셔틀버스 노선표 <i class="fas fa-caret-down"></i>
+						</li>
+						<li>대중교통 이용안내 <i class="fas fa-caret-down"></i></li>
+						<li>승용차(고속도로) 이용안내 <i class="fas fa-caret-down"></i></li>
+					</ul>
+				</div>
+				<iframe class="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.537891283447!2d126.65531541560144!3d37.44802003866362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b79abdbb01089%3A0x4443efd7cade27cc!2z7J247ZWY6rO17JeF7KCE66y464yA7ZWZ!5e0!3m2!1sko!2skr!4v1608646257071!5m2!1sko!2skr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+		</div>
+	</section>
+	<section  id="page_6" data-anchor="Page 6">
+		<div class="text">
+			<div class="full page6">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/cPwTr9-3pvw?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</section>
+</main>
+
+<div class="page-progress">
+	<svg class="radial-svg" width="50" height="50" transform="rotate(-90 0 0)">
+		<circle class="radial-fill" stroke-width="0" r="14" cx="20" cy="20"></circle>
+	</svg>
+</div>
+
+<div class="progress"><div class="bar" style="transform: scale(0, 1);"></div></div>
+
+	</body>
+</html>
